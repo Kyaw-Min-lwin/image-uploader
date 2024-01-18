@@ -6,11 +6,19 @@ from .models import Images
 
 class SignUp(UserCreationForm):
     email = forms.EmailField()
+
     class Meta:
         model = User
-        fields = ['username', 'email', 'password1', 'password2']
-    
+        fields = ["username", "email", "password1", "password2"]
+
+
 class SaveImage(forms.ModelForm):
     class Meta:
         model = Images
-        fields = ['image']
+        fields = ["image"]
+
+
+class EditImage(forms.ModelForm):
+    class Meta:
+        model = Images
+        fields = ["image"]

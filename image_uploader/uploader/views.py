@@ -4,7 +4,6 @@ from django.contrib import messages
 from .models import Images
 from PIL import Image
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-import os
 from django.utils.datastructures import MultiValueDictKeyError
 
 
